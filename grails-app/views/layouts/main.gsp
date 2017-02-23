@@ -13,21 +13,40 @@
     <g:layoutHead/>
 </head>
 <body>
-
+<style>
+.logo {
+    background-color: burlywood;
+    display: inline-block;
+    border: 1px solid cyan;
+    float: left;
+}
+.search {
+    background-color: black;
+    border: 1px solid yellow;
+    display: -webkit-box;
+}
+</style>
     <div class="navbar navbar-default navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
+                <div class="logo">
+                    <a class="navbar-brand" href="/#">
+                        <i class="fa fa-archive ico-logo"></i> Armário
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="box-busca">
+                        <form name="busca" action="#" method="post">
+                            <input type="text" name="palavra" value="" placeholder="Buscar ...">
+                        </form>
+                    </div>
+                </div>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/#">
-                    <i class="fa grails-icon">
-                        <asset:image src="grails-cupsonly-logo-white.svg"/>
-                    </i> Grails
-                </a>
             </div>
             <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
                 <ul class="nav navbar-nav navbar-right">
@@ -35,7 +54,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> <!-- .navbar -->
 
     <g:layoutBody/>
 

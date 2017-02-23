@@ -6,6 +6,15 @@
         <g:if env="development"><asset:stylesheet src="errors.css"/></g:if>
     </head>
     <body>
+        <div class="blank">
+            &nbsp;
+        </div>
+        <div class="blank">
+            &nbsp;
+        </div>
+        <div class="blank">
+            &nbsp;
+        </div>
         <g:if env="development">
             <g:if test="${Throwable.isInstance(exception)}">
                 <g:renderException exception="${exception}" />
@@ -27,5 +36,14 @@
                 <li>An error has occurred</li>
             </ul>
         </g:else>
+        <div class="blank">
+            &nbsp;
+        </div>
+        <div class="blank">
+            &nbsp;
+        </div>
+        <div class="blank">
+            &nbsp;
+        </div>
     </body>
 </html>
